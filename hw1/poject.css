@@ -1,24 +1,32 @@
+/*Первое дз пе*/
 @charset "UTF-8";
 /* Обнуление стилей */
 * {
   margin: 0;
   padding: 0;
 }
-.center {
+html {
+    scroll-behavior: smooth;
+}
+
+.centre {
     padding-left: calc(50% - 720px);
     padding-right: calc(50% - 720px);
 }
-.first_block{
-    background: rgb(225, 255, 143);
-    background-image: url('back.jpeg');
-    width: 1440px;
-    height: 800px;
+.header{
+        height: 800px;
+        background-color: rgb(225, 255, 143);
+        background-image: url(img/star1.png), url(img/star2.png), url(img/starbig.svg);
+        background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 140% -330px;
+        display: flex;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        flex-direction: column;
     display: flex;
     flex-direction: column;
     gap: 156px;
     overflow: hidden;
 }
-.first_block_background{
+.header__content{
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -27,10 +35,10 @@
     padding-left: 120px;
     padding-top: 196px;
 }
-.first_block_background_title_one {
+.header__title {
     width: 769px;
-    height: 156px
-    color: rgb(32, 32, 39);
+    
+    color:  rgb(32, 32, 39);
     font-family: Montserrat;
     font-size: 64px;
     font-weight: 700;
@@ -38,10 +46,16 @@
     letter-spacing: 0px;
     text-align: left;
 }
-.first_block_background_title_two{
-
+.header__subtitle{
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
 }
-.start { 
+.header__button { 
     width: 247px;
     height: 66px;
     margin-top: 24px;
@@ -53,11 +67,14 @@
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 66px;
     letter-spacing: 0%;
     text-align: center;
+    /* Сохраняем существующие стили кнопки */
+    display: inline-block;
+    text-decoration: none; /* Убираем подчеркивание ссылки */
 }
-.button_title {
+.header__button-text {
     font-family: Montserrat;
     font-size: 26px;
     font-weight: 600;
@@ -66,7 +83,7 @@
     text-align: center;   
     
 }
-.footer_first_block {
+.header__footer {
 background: rgb(188, 236, 48);
 background-image: url(type.png);
 width: 3220px;
@@ -75,18 +92,19 @@ box-sizing: border-box;
 border: 1px solid rgba(255, 255, 255, 0.2);
 backdrop-filter: blur(50px);
 }
-.second_block{
-background-color: rgb(32, 32, 39);
-background-image: url(2SEC.jpeg);
-width: 1440px;
-height: 1470px;
+.games{
+background: rgb(32, 32, 39);
+background-image: url(img/Starblack.png), url(img/Starthree.png), url(img/starblacktwo.png);
+background-position: 2100px 150px, 0px 950px, 0px 900px;
+flex-direction: column;
 display: flex;
+background-repeat: no-repeat, no-repeat, no-repeat;
 flex-direction: column;
 }
-.second_block_other{
+.games__content{
 padding-left: 119px; ;
 }
-.second_block_text_one{
+.games__title{
 color: rgb(255, 255, 255);
 font-family: Montserrat;
 font-size: 64px;
@@ -97,7 +115,7 @@ text-align: left;
 margin-top: 97px;
 
 }
-.second_block_text_two {
+.games__subtitle {
 color: rgb(255, 255, 255);
 font-family: Montserrat;
 font-size: 24px;
@@ -108,23 +126,38 @@ text-align: left;
 margin-top: 24px ;
 margin-bottom: 72px; 
 }
-.second_block_games{
+.games__list{
 display: flex;
-flex-wrap: wrap;
 flex-direction: row;
 gap: 32px;
+flex-wrap: wrap;
+align-items: flex-start;
 }
-.block_game_part{
+.game-card{
 border-radius: 30px;
 background: rgb(255, 255, 255);
 display: flex;
 flex-direction: column;
 }
-.block_game_part_picture{
+.game-card__two{
+border-radius: 30px;
+background: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+padding-bottom: 32px;
+}
+.game-card__five{
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    }
+.game-card__image{
 width: 378px;
 height: 314px;
 }
-.block_game_part_text{
+.game-card__content{
 display: flex;
 flex-direction: column;
 gap: 16px;
@@ -132,9 +165,8 @@ padding: 32px;
 padding-bottom: 36px;
 }
 
-.block_game_part_text_one{
+.game-card__number{
 width: 108px;
-height: 36px;
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
@@ -150,11 +182,10 @@ line-height: 110%;
 letter-spacing: 0px;
 text-align: left;
 }
-.block_game_part_text_two{
+.game-card__name {
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-gap: 16;
 padding: 0px;
 color: rgb(32, 32, 39);
 font-family: Montserrat;

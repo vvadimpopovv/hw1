@@ -1,3 +1,4 @@
+<!-- 1  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,66 +11,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  
 </head>
-<body class="center">
- <header class="first_block">
-    <div class="first_block_background">
-     <h1 class="first_block_background_title_one">Добро пожаловать на мой сайт мини-игр</h1>
-     <h2 class="first_block_background_title_two">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <span class="button_title">«Поехали!»</span> и <span class="button_title">приступай.</span></h2>
-     <button class="start" type="submit"> Поехали! </button>
+<body class="page">
+  <header class="header centre">
+    <div class="header__content">
+     <h1 class="header__title">Добро пожаловать на мой сайт мини-игр</h1>
+     <h2 class="header__subtitle">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <span class="header__button-text">«Поехали!»</span> и <span class="header__button-text">приступай.</span></h2>
+     <a href="#games" class="header__button" "> Поехали!
+     </a>
     </div>
-    <div class="footer_first_block">   
+    <div class="header__footer ">   
     </div>      
- </header>
- <section class="second_block">
- <div class="second_block_other">
-   <h1 class="second_block_text_one">Об играх</h1>
-   <h2 class="second_block_text_two">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</h2>
-   <div class="second_block_games">
-      <div class="block_game_part">
-        <img class="block_game_part_picture" src="game_1.png" alt="игра 1">
-         <div class="block_game_part_text">
-         <p class="block_game_part_text_one">Игра №1 </p>
-         <p class="block_game_part_text_two"> Угадай число </p>
+  </header>
+
+ <section class=" games centre " id="games">
+ <div class="games__content">
+   <h1 class="games__title">Об играх</h1>
+   <h2 class="games__subtitle">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.
+   </h2>
+ 
+   <div class="games__list ">
+      <div class="game-card">
+        <img class="game-card__image" src="game_1.png" alt="игра 1">
+         <div class="game-card__content">
+         <p class="game-card__number">Игра №1 </p>
+         <p class="game-card__name"> Угадай число </p>
          </div>
       </div>
-      <div class="block_game_part">
-        <img class="block_game_part_picture" src="game_2.png" alt="игра 1">
-         <div class="block_game_part_text">
-         <p class="block_game_part_text_one">Игра №2 </p>
-         <p class="block_game_part_text_two"> Простая<br>арифметика </p>
+      <div class="game-card__two ">
+        <img class="game-card__image" src="game_2.png" alt="игра 1">
+         <div class="game-card__content">
+         <p class="game-card__number">Игра №2 </p>
+         <p class="game-card__name special"> Простая<br>арифметика </p>
          </div>
        </div>
-      <div class="block_game_part">
-            <img class="block_game_part_picture" src="game_3.png" alt="игра 1">
-             <div class="block_game_part_text">
-             <p class="block_game_part_text_one">Игра №3 </p>
-             <p class="block_game_part_text_two"> Переверни текст </p>
+      <div class="game-card">
+            <img class="game-card__image" src="game_3.png" alt="игра 1">
+             <div class="game-card__content">
+             <p class="game-card__number">Игра №3 </p>
+             <p class="game-card__name"> Переверни текст </p>
              </div>
       </div>
-      <div class="block_game_part">
-        <img class="block_game_part_picture" src="game_4.png" alt="игра 1">
-         <div class="block_game_part_text">
-         <p class="block_game_part_text_one">Игра №4 </p>
-         <p class="block_game_part_text_two"> Камень,<br> ножницы, <br>бумага </p>
+      <div class="game-card">
+        <img class="game-card__image" src="game_4.png" alt="игра 1">
+         <div class="game-card__content">
+         <p class="game-card__number">Игра №4 </p>
+         <p class="game-card__name  "> Камень,<br> ножницы, <br>бумага </p>
          </div>
       </div>
-      <div class="block_game_part">
-        <img class="block_game_part_picture" src="game_5.png" alt="игра 1">
-         <div class="block_game_part_text">
-         <p class="block_game_part_text_one">Игра №5 </p>
-         <p class="block_game_part_text_two"> Простая <br> викторина </p>
+      <div class="game-card__five">
+        <img class="game-card__image" src="game_5.png" alt="игра 1">
+         <div class="game-card__content">
+         <p class="game-card__number">Игра №5 </p>
+         <p class="game-card__name"> Простая <br> викторина </p>
          </div>
       </div>
-      <div class="block_game_part">
-        <img class="block_game_part_picture" src="game_6.png" alt="игра 1">
-         <div class="block_game_part_text">
-         <p class="block_game_part_text_one">Игра №6 </p>
-         <p class="block_game_part_text_two"> Генератор <br>случайных <br>цветов </p>
+      <div class="game-card">
+        <img class="game-card__image" src="game_6.png" alt="игра 1">
+         <div class="game-card__content">
+         <p class="game-card__number">Игра №6 </p>
+         <p class="game-card__name "> Генератор <br>случайных <br>цветов </p>
          </div>
       </div>
       </div>
    </div>
- </div> 
  </section>   
 </body>
 </html>
