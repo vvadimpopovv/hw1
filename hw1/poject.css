@@ -129,9 +129,12 @@ margin-bottom: 72px;
 .games__list{
 display: flex;
 flex-direction: row;
-gap: 32px;
+column-gap: 32px;
 flex-wrap: wrap;
 align-items: flex-start;
+}
+.another{
+    margin-top: 34px;
 }
 .game-card{
 border-radius: 30px;
@@ -139,20 +142,6 @@ background: rgb(255, 255, 255);
 display: flex;
 flex-direction: column;
 }
-.game-card__two{
-border-radius: 30px;
-background: rgb(255, 255, 255);
-display: flex;
-flex-direction: column;
-padding-bottom: 32px;
-}
-.game-card__five{
-    border-radius: 30px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    }
 .game-card__image{
 width: 378px;
 height: 314px;
